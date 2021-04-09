@@ -131,14 +131,4 @@ class _TodoListState extends State<TodoList> {
           );
         });
   }
-
-  // Fungsi untuk mendapatkan list data kegiatan.
-  List<Widget> _getItems() {
-    final List<Widget> _todoWidgets = <Widget>[];
-    for (String title in _todoList) {
-      // proses generate card widget
-      _todoWidgets.add(_buildTodoItem(title));
-    }
-    return _todoWidgets;
-  }
 }
